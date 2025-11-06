@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.awt.*;
 
 public class Circle extends Shape {
@@ -8,6 +10,7 @@ public class Circle extends Shape {
         this.radius = radius;
     }
     public void paint(){
+        turtle.penUp();
         turtle.setColor(color);
         turtle.setPenWidth(borderWidth);
         turtle.goTo(location.x, location.y);

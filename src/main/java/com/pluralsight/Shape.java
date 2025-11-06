@@ -1,15 +1,17 @@
+package com.pluralsight;
+
 import java.awt.*;
 
 /*
 
 circle
-Hexagon
+com.pluralsight.Hexagon
 Save screenshots of your diagrams to your repo.
 
  */
 
 public abstract class Shape {
-    protected Turtle turtle; //Turtle
+    protected Turtle turtle; //com.pluralsight.Turtle
     protected Point location; // X, Y Coordinates
     protected Color color; //Border Color
     protected double borderWidth; //Width of Border

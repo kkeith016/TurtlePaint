@@ -1,24 +1,27 @@
+package com.pluralsight;
+
 import java.awt.*;
 
-public class Triangle extends Shape {
+public class Square extends Shape {
     private double size;
 
 
-    public Triangle(Turtle t, double borderWidth, Color color, Point location, double size) {
+    public Square(Turtle t, double borderWidth, Color color, Point location, double size) {
         super(t, borderWidth, color, location);
         this.size = size;
     }
 
-    public void paint(){
+    @Override
+    public void paint() {
+        turtle.penUp();
         turtle.setColor(color);
         turtle.setPenWidth(borderWidth);
         turtle.goTo(location.x, location.y);
         turtle.penDown();
 
-        for( int i = 0; i < 3; i++ ) {
-            turtle.turnRight(60);
+        for( int i = 0; i < 4; i++ ) {
+           turtle.turnRight(90);
             turtle.forward(size);
-
         }
         turtle.penUp();
     }
