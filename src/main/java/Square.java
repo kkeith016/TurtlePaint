@@ -15,11 +15,11 @@ public class Square extends Shape {
         turtle.setPenWidth(borderWidth);
         turtle.goTo(location.x, location.y);
         turtle.penDown();
-        turtle.penUp();
 
         for( int i = 0; i < 4; i++ ) {
            turtle.turnRight(90);
             turtle.forward(size);
         }
+        turtle.penUp();
     }
 }
