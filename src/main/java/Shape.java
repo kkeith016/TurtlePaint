@@ -2,18 +2,7 @@ import java.awt.*;
 
 /*
 
-Shape: abstract
---------------------
-turtle: the turtle that is used to paint the shape
-location: Point -- the x,y coordinate where the shape
-should be drawn
-color: the color used for the border
-border: the width of the shape border
-paint() - the method that paints the shape
-You should create at least 3 different classes that extend shape. These could be:
-Square
-Triangle
-Circle
+circle
 Hexagon
 Save screenshots of your diagrams to your repo.
 
