@@ -1,13 +1,5 @@
 import java.awt.*;
 
-/*
-
-circle
-Hexagon
-Save screenshots of your diagrams to your repo.
-
- */
-
 public abstract class Shape {
     protected Turtle turtle; //Turtle
     protected Point location; // X, Y Coordinates
