@@ -1,25 +1,25 @@
 import java.awt.*;
 
 public class Triangle extends Shape {
-    private double size;
+    private double sideLength;
 
-
-    public Triangle(Turtle t, double borderWidth, Color color, Point location, double size) {
+    public Triangle(Turtle t, double borderWidth, Color color, Point location, double sideLength) {
         super(t, borderWidth, color, location);
-        this.size = size;
+        this.sideLength = sideLength;
     }
 
-    public void paint(){
+    @Override
+    public void paint() {
         turtle.setColor(color);
         turtle.setPenWidth(borderWidth);
         turtle.goTo(location.x, location.y);
         turtle.penDown();
 
-        for( int i = 0; i < 3; i++ ) {
-            turtle.turnRight(60);
-            turtle.forward(size);
-
+        for (int i = 0; i < 3; i++) {
+            turtle.forward(sideLength);
+            turtle.turnRight(120);
         }
+
         turtle.penUp();
     }
 }
